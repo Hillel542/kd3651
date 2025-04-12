@@ -1,0 +1,215 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #2A4A7B; /* Solid blue text */
+    font-size: 18px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Navigation Styles */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #2A4A7B; /* Dark blue for text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #4F8DFF;
+  }
+  
+  /* Section Styles */
+  .section {
+    min-height: 100vh;
+    padding: 150px 40px 100px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Council Section Styles */
+  .council {
+    background-color: #ffffff; /* White background for council section */
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .council-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 280px;
+    transition: all 0.3s ease;
+    filter: blur(1px);
+    opacity: 0.6;
+    transform: scale(0.85);
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .council-card.active {
+    transform: scale(1);
+    filter: none;
+    opacity: 1;
+  }
+  
+  .council-card:hover {
+    transform: scale(1.1);
+    filter: none;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .council-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .council-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .council-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .council-top-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .council-bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .crown-icon {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Us Section */
+  #contact-us {
+    background-color: #ffffff;
+    padding: 100px 40px;
+    text-align: center;
+  }
+  
+  #contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  #contact-us p {
+    font-size: 1.2rem;
+  }
+  
+  #contact-us a {
+    color: #4F8DFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
